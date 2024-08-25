@@ -1,6 +1,30 @@
+/* color pallet 
+    #24231E
+    #191917
+    #3E2718
+    #9C7859
+*/
+
 html {
     overflow-y: auto;
-    background: #faf3e6;
+    background: rgba(156, 120, 89, 0.45);
+    opacity: 1;
     background-size: 22em;
     font-family: 'Roboto Mono';
+    color: #24231E;
+    text-align: center;
+}
+
+/* header section */
+#header {
+    font-weight: bold;
+}
+
+nav {
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav li {
+    display: inline-block;
 }
