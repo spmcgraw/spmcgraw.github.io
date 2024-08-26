@@ -15,6 +15,14 @@ html {
     text-align: center;
 }
 
+html:before {
+    content: "";
+    height: 20px;
+    background: url('../images/img-lg-horiz-border.png') repeat-x 0 -2px;
+    background-size: 40em;
+    display: block;
+}
+
 /* header section */
 #header {
     font-weight: bold;
@@ -27,4 +35,44 @@ nav {
 
 nav li {
     display: inline-block;
+}
+
+/* HTML Section */
+
+/* Table Styling */
+table {
+    border: 1.5px solid #3E2718;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1.5px solid #3E2718;
+    padding: 4px 5px;
+}
+
+thead {
+    background-color: #3E2718;
+    color: #EBE8E7;
+}
+td{
+    font-family: 'M PLUS Code Latin';
+}
+
+.description {
+    text-align: left;
+}
+
+/* Footer Section */
+footer {
+    background: url('../images/img-lg-horiz-border.png') repeat-x bottom left;
+    background-size: 40em;
+    margin: 5.5em 1px -1px;
+    padding-bottom: 8.5em;
+}
+
+@media (min-width:600px) {
+    html:before{
+        background-size: 50em;
+    }
 }
