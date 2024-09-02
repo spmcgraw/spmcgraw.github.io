@@ -1,6 +1,70 @@
+/* Color palette 
+    --eerie-black: #24231eff;
+    --bistre: #3e2718ff;
+    --chamoisee: #9c7859ff;
+    --cambridge-blue: #72bda3ff;
+    --isabelline: #f4f3eeff;
+    --dun: #D2C2B4
+*/
+
 /* Universal Styles */
 body {
+    background: #D2C2B4;
+    opacity: 1;
+    background-size: 22em;
     font-family: 'Roboto Mono';
+    color: #24231E;
+    text-align: center;
+    margin: 0 10%;
 }
 
 /* Header Styles */
+
+/* Container Styles */
+.container {
+    border: 1px solid #24231E;
+    padding: 5px 10px;
+    margin: 10px auto;
+}
+
+.container h2 {
+    text-align: left;
+}
+
+/* Color Container Styles */
+.container-color {
+    width: 100%;
+}
+
+.color-panel {
+    display: inline-block;
+    width: 15%;
+    margin: 10px 20px;
+    min-height: 100px;
+}
+
+.eerie-black {
+    background-color: #24231E;
+    color: #f4f3ee;
+}
+
+.bistre {
+    background-color: #3e2718;
+    color: #f4f3ee;
+}
+
+.chamoisee {
+    background-color: #9c7859;
+}
+
+.cambridge-blue {
+    background-color: #72bda3;
+}
+
+.isabelline {
+    background-color: #f4f3ee;
+}
+
+/* Font Container Styles */
+
+/* Text Container Styles */
