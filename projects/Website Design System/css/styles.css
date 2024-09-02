@@ -21,10 +21,26 @@ body {
 /* Header Styles */
 
 /* Container Styles */
+.container::before {
+    content: "";
+    height: 20px;
+    background: url('../images/img-lg-horiz-border.png') repeat-x 0 -2px;
+    background-size: 40em;
+    display: block;
+}
+
 .container {
-    border: 1px solid #24231E;
+    /*border: 1px solid #24231E;*/
     padding: 5px 10px;
     margin: 10px auto;
+}
+
+.container-text::after {
+    content: "";
+    height: 20px;
+    background: url('../images/img-lg-horiz-border.png') repeat-x 0 -2px;
+    background-size: 40em;
+    display: block;
 }
 
 .container h2 {
@@ -66,5 +82,63 @@ body {
 }
 
 /* Font Container Styles */
+.container-font {
+    width: 100%;
+}
 
+.font-panel {
+    display: inline-block;
+    width: 40%;
+}
+
+.font-label {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.regular {
+    font-style: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.roboto-mono {
+    font-family: 'Roboto Mono';
+}
+
+.m-plus-code-latin {
+    font-family: 'M PLUS Code Latin';
+}
 /* Text Container Styles */
+.container-text {
+    text-align: left;
+}
+
+.text-panel h1, .text-h1 {
+    font-weight: 800;
+    font-size: 26px;
+    font-family: 'Roboto Mono';
+}
+
+.text-panel h2, .text-h2 {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Roboto Mono';
+}
+
+.text-panel p, .text-p {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'M PLUS Code Latin';
+}
+
+.text-panel ul {
+    padding: 0px auto;
+    margin-top: 5px;
+}
