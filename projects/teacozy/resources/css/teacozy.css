@@ -1,11 +1,14 @@
 /* Global styles */
 * {
     font-family: Helvetica;
-    font-size: 22px;
     color: seashell;
     background-color: black;
     opacity: 0.9;
     text-align: center;
+}
+
+a, p {
+    font-size: 22px;
 }
 
 /*--- Page-header ---*/
@@ -32,7 +35,88 @@ a {
     color: seashell;
 }
 
+/*--- section ---*/
+section {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section header {
+    height: fit-content;
+    width: 100%;
+}
+
 /*--- mission ---*/
 #mission {
     background-image: url("../images/img-mission-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 1200px;
+    margin-top: 70px;
+}
+
+/*--- featured ---*/
+#featured {
+    width: 1000px;
+    display: flex;
+}
+
+#featured-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.featured-item {
+    margin: 1em;
+}
+
+.featured-image {
+    height: 200px;
+    width: 300px;
+}
+
+.featured-caption {
+    margin-top: 10px;
+}
+
+/*--- locations ---*/
+#locations {
+    background-image: url(../images/img-locations-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.transparent {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#locations h2 {
+    margin-bottom: 15px;
+}
+
+#locations-content {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+}
+
+.locations-item {
+    width: 300px;
+    margin: 0 20px;
+    opacity: 1;
+}
+
+/*--- contact ---*/
+.contact {
+    height: 200px;
+}
+
+#copyright {
+    text-align: left;
+    margin-left: 20px;
 }
