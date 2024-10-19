@@ -17,4 +17,4 @@ Missing/Errornous items in HTML:
 
 To do list:
 
-[ ] Check CSS file for errors
+- [ ] Check CSS file for errors
