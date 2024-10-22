@@ -15,6 +15,17 @@ Missing/Errornous items in HTML:
     1. Correct src links to images in the Features Section.
     2. The Quote Section comment was missing the proper closure.
 
+CSS Corrections:
+
+1. Header Section:
+    1. Header class - added `z-index = 100`
+    2. Header .Content - \```js
+        { height: 5.3125rem;
+          padding: 0 1.875rem;}
+
+        \```
+    3.
+
 To do list:
 
 - [ ] Check CSS file for errors
