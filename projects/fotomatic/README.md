@@ -17,15 +17,78 @@ Missing/Errornous items in HTML:
 
 CSS Corrections:
 
-1. Header Section:
-    1. Header class - added `z-index = 100`
-    2. Header .Content - \```js
-        { height: 5.3125rem;
-          padding: 0 1.875rem;}
+1. Universal Section:
 
-        \```
-    3.
+    ```css
+        .image-container img {
+            max-width: 100%;
+        }
+    ```
 
-To do list:
+2. Header Section:
 
-- [ ] Check CSS file for errors
+    ```css
+        header {
+            z-index: 100;
+        }
+
+        header .content {
+            height: 5.3125rem;
+            padding: 0 1.875rem;
+        }
+
+        header .logo {
+            color: #4a4a4a;
+            font-size: 1.5rem;
+            font-family: "Roboto Mono";
+        }
+    ```
+
+3. Sign Up Section:
+
+    ```css
+        #sign-up-section {
+            background-image: url("../images/banner-landingpage.jpg");
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #sign-up-cta {
+            position: relative;
+            top: 10.625rem;
+            left: 10%;
+        }
+    ```
+
+4. Feature Section Media >760px:
+
+    ```css
+        .feature .content {
+            padding: 1.25rem 0 1.875rem 0;
+        }
+    ```
+
+5. Filters Section:
+
+    ```css
+        #filters-section .content h2 {
+            opacity: 100%;
+        }
+
+        #filters-section .images-container {
+            display: flex;
+        }
+    ```
+
+6. Quote Section (several of the classes were missing a **.**):
+
+    ```css
+        quotes-section .content {
+            padding: 5rem 0;
+        }
+
+        #quotes-section .quote-citation {
+            padding-left: 1.875rem;
+        }
+    ```
